@@ -1,52 +1,15 @@
-class Ac{
-	static boolean isConnected = false ;
-	static int temperature;
-	static int maxTemperature = 6;
-	static int mintemperature ;
-	
-	
-	
-	public static void onOrOff(){
-		if(isConnected == false){
-			isConnected = true;
-			System.out.println("Ac is on");
-		}else{
-			isConnected = false ;
-			System.out.println("Ac is Off");
-		}
-	}
-	public static void  increaseTemp(){
-	    if(isConnected == true){
-			if(temperature >  maxTemperature){
-				System.out.println("Maximum temperature");
-			}else{
-				temperature = temperature++;
-				System.out.println("Temperature is :"+temperature);
-			}
-		}
-			if(isConnected == false){
-				System.out.println("Please turnon the AC");
-				//void isConnected()
-			}
-		
-			
-		}
-	
-	
-	public static void decreaseTemp(){
-		if(isConnected == true){
-			if(temperature < mintemperature){
-				System.out.println("Minimum temperature");
-			}else{
-				 temperature = temperature--;
-				System.out.println("Temperature is :"+temperature);
-			}
-		}
-		if(isConnected == false){
-			System.out.println("Please turnon the AC");
-		}
-	}
+public class AC {
+    public static void main(String[] args) {
+        int id = 101;
+        String brand = "Haier";
+        String model = "AR12TY3QBBU";
+        String type = "Split AC";
+        boolean isEnergyEfficient = true;
 
-
-
-} 
+        System.out.println("Air Conditioner ID is: " + id);
+        System.out.println("Air Conditioner brand is: " + brand);
+        System.out.println("Air Conditioner model is: " + model);
+        System.out.println("Air Conditioner type is: " + type);
+        System.out.println("Is it energy efficient: " + isEnergyEfficient);
+    }
+}
