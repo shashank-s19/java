@@ -1,2 +1,0 @@
-class 12Student{
-}
